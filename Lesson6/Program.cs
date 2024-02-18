@@ -62,7 +62,6 @@ namespace Les6
         {
             int space = 0;
             s = s.Trim();
-            s.ToCharArray();
             for(int i = 0; i < s.Length; i++)
             {
                 if (s[i]==' ')
