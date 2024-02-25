@@ -25,6 +25,9 @@ namespace Les6
         }
         static void PrintResult(int a,int b)
         {
+             a = a + b;
+            b = a - b;
+            a = a - b;
             Console.WriteLine($"The 1st number is:{a}");
             Console.WriteLine($"The 2nd number is:{b}");
 
@@ -59,7 +62,6 @@ namespace Les6
         {
             int space = 0;
             s = s.Trim();
-            s.ToCharArray();
             for(int i = 0; i < s.Length; i++)
             {
                 if (s[i]==' ')
@@ -80,9 +82,35 @@ namespace Les6
             {
                 arr[i] = r.Next(0,100);
             }
-            Array.Sort(arr);
-            Array.Reverse(arr);
+            int temp;
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = 0; j < arr.Length-i-1; j++)
+                {
+                    if (arr[j + 1] < arr[j])
+                    {
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
 
+                }
+
+            } //ascending order
+             for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = 0; j < arr.Length-i-1; j++)
+                {
+                    if (arr[j + 1] > arr[j])
+                    {
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+
+                }
+
+            } // descending order
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write(arr[i] + " ");
