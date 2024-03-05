@@ -13,22 +13,22 @@ namespace Les11
     {
         static async Task Main(string[] args)
         {
-            const string url = "https://dog.ceo/api/breeds/image/random";
-            HttpClient client = new HttpClient();
             bool contin;
+            int count = 1;
             do
             {
                 string url = "https://dog.ceo/api/breeds/image/random";
-            HttpClient h = new HttpClient();
-            var result = h.GetStringAsync(url).Result;
-            var final = JsonConvert.DeserializeObject<Dog>(result);
-            string imgURL = $"{final.message}";
-            string imgPath = @"C:\Users\Azay\Desktop\dog.jpg";
-            byte[] imagebytes = await h.GetByteArrayAsync(imgURL);
-            File.WriteAllBytes(imgPath, imagebytes);
-            Console.WriteLine("Successfully downloaded!...");
-            Console.ReadLine();
-            }while(contin);
+                HttpClient h = new HttpClient();
+                var result = h.GetStringAsync(url).Result;
+                var final = JsonConvert.DeserializeObject<Dog>(result);
+                string imgURL = $"{final.message}";
+                string imgPath = $"C:\\Users\\Azay\\Desktop\\dog_{count}.jpg";
+                byte[] imagebytes = await h.GetByteArrayAsync(imgURL);
+                File.WriteAllBytes(imgPath, imagebytes);
+                Console.WriteLine("Successfully downloaded!...");
+                contin =Convert.ToBoolean(Console.ReadLine());
+                count++;
+            } while (contin);
 
         }
         static async Task Main3(string[] args)
