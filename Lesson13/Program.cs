@@ -14,6 +14,8 @@ namespace Lesson13
        
         public static void Main(string[] args)
         {
+            //Task 1
+
             DriveInfo[] alldrives = DriveInfo.GetDrives();
           /*  foreach (DriveInfo drive in alldrives)
             {
@@ -23,6 +25,8 @@ namespace Lesson13
                 Console.WriteLine($"Used size of drive is :{Formatting(drive.TotalSize-drive.AvailableFreeSpace)}");
 
             }*/
+
+            //Task 3
           /*
             PerformanceCounter p = new PerformanceCounter("Processor","% Processor Time", "_Total");
             p.NextValue();
@@ -30,6 +34,8 @@ namespace Lesson13
             var percentage = p.NextValue();
             Console.WriteLine($"Percentage is: {percentage:n2}");
           */
+
+          //Task 4
           Console.WriteLine("Enter the value to shut down the computer:");
 
             if(!int.TryParse(Console.ReadLine(), out int minute)){
