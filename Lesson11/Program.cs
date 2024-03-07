@@ -13,63 +13,45 @@ namespace Les11
     {
         static async Task Main(string[] args)
         {
-            const string url = "https://dog.ceo/api/breeds/image/random";
-            HttpClient client = new HttpClient();
             bool contin;
+            int count = 1;
             do
             {
-                var result = await client.GetStringAsync(url);
+                string url = "https://dog.ceo/api/breeds/image/random";
+                HttpClient h = new HttpClient();
+                var result = h.GetStringAsync(url).Result;
                 var final = JsonConvert.DeserializeObject<Dog>(result);
-                 Console.WriteLine(final.message);
-                Process.Start(final.message);
-                contin =Convert.ToBoolean( Console.ReadLine() );
-            }while(contin);
+                string imgURL = $"{final.message}";
+                string imgPath = $"C:\\Users\\Azay\\Desktop\\dog_{count}.jpg";
+                byte[] imagebytes = await h.GetByteArrayAsync(imgURL);
+                File.WriteAllBytes(imgPath, imagebytes);
+                Console.WriteLine("Successfully downloaded!...");
+                contin =Convert.ToBoolean(Console.ReadLine());
+                count++;
+            } while (contin);
 
         }
         static async Task Main3(string[] args)
         {
-            const string url = "https://api.nationalize.io/?name=nathaniel";
-             HttpClient client = new HttpClient();
-           
-             var st = await client.GetStringAsync(url);
-             var result = JsonConvert.DeserializeObject<Nationality>(st);
-            if (result.name == "nathaniel")
+             string name = Console.ReadLine();
+            string url = $"https://api.nationalize.io?name={name}";
+            HttpClient h = new HttpClient();
+            var result = h.GetStringAsync(url).Result;
+            var final = JsonConvert.DeserializeObject<Natinality>(result);
+            foreach(var item in final.country)
             {
-                double max=0;
-                for(int i = 0; i <  result.country.Length; i++)
-                {
-                    if (result.country[i].probability > max)
-                    {
-                        max=result.country[i].probability;
-                    }
-                }
-                 for(int i = 0; i < result.country.Length; i++)
-                {
-                    if (result.country[i].probability == max)
-                    {
-                         Console.WriteLine("Nationalty = " + result.country[i].country_id);
-                         Console.WriteLine("Name = "+result.name);
-                    }
-                }
-                
-
+                Console.WriteLine($"Your country id is:{item.country_id},and probability is:{item.probability}");
             }
-           
      Console.ReadLine();
         }
         static async Task Main2(string[] args)
         {
-             const string url = "https://api.genderize.io?name=luc";
-             HttpClient client = new HttpClient();
-           
-                var st = await client.GetStringAsync(url);
-                var result = JsonConvert.DeserializeObject<Gender>(st);
-                if (result.name == "luc")
-                {
-                     Console.WriteLine("Gender = "+result.gender);
-                     Console.WriteLine("Name = "+result.name);
-
-                }
+             string name = Console.ReadLine();
+            string url = $"https://api.genderize.io/?name={name}";
+            HttpClient h = new HttpClient();
+            var result =  h.GetStringAsync(url).Result;
+            var final = JsonConvert.DeserializeObject<Gender>(result);
+            Console.WriteLine(final.gender);
            
                  Console.ReadLine();
 
