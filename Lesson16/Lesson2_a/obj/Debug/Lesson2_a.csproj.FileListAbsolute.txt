@@ -1,0 +1,8 @@
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\bin\Debug\Lesson2_a.exe.config
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\bin\Debug\Lesson2_a.exe
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\bin\Debug\Lesson2_a.pdb
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\obj\Debug\Lesson2_a.csproj.AssemblyReference.cache
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\obj\Debug\Lesson2_a.csproj.SuggestedBindingRedirects.cache
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\obj\Debug\Lesson2_a.csproj.CoreCompileInputs.cache
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\obj\Debug\Lesson2_a.exe
+C:\Users\Azay\Desktop\Lesson2_a\Lesson2_a\obj\Debug\Lesson2_a.pdb
