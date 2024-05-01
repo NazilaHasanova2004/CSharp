@@ -1,0 +1,14 @@
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\bin\Debug\Lesson21_orj.exe.config
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\bin\Debug\Lesson21_orj.exe
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\bin\Debug\Lesson21_orj.pdb
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.csproj.AssemblyReference.cache
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.csproj.SuggestedBindingRedirects.cache
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.Form1.resources
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.Properties.Resources.resources
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.csproj.GenerateResource.cache
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.csproj.CoreCompileInputs.cache
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.exe
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.pdb
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.Form2.resources
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.Form3.resources
+C:\Users\Azay\Desktop\Lesson21_orj\Lesson21_orj\obj\Debug\Lesson21_orj.Read.resources
